@@ -190,7 +190,7 @@ p {
 /* --------------------------------------- */
 
 a {
-    color: var(--black);
+    color: var(--white);
     font-weight: 400;
     font-family: 'Jost', sans-serif;
     transition: all .2s;
@@ -220,7 +220,7 @@ body:not(.user-is-tabbing) a:focus {
     display: inline-block;
     padding: 1rem 4.2rem;
     text-decoration: none;
-    color: inherit;
+    color: var(--black);
     border: 1px solid  var(--pink);
     font-weight: 400;
 }
