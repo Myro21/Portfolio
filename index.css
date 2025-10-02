@@ -613,3 +613,22 @@ body:not(.user-is-tabbing) a:focus {
         padding: var(--gutter-medium) 0;
     } 
 }
+.nav {
+  position: relative;
+  z-index: 3; /* keep nav on top of hero text */
+}
+
+.header__text-box {
+  margin-top: 80px; /* push hero text down so it's not hidden */
+}
+
+@media (max-width: 768px) {
+  .header__text-box {
+    margin-top: 100px; /* a bit more space on smaller screens */
+  }
+
+  .heading-primary {
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    line-height: 1.1;
+  }
+}
