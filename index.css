@@ -659,3 +659,17 @@ body:not(.user-is-tabbing) a:focus {
     line-height: 1.1;
   }
 }
+@media (max-width: 900px) {
+  .header__text-box {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;   /* start from top of remaining space */
+    padding-top: 6rem;         /* push it further down */
+  }
+
+  .header__text {
+    position: static;
+    top: auto;
+    transform: none;
+  }
+}
