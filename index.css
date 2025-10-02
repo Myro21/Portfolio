@@ -632,3 +632,30 @@ body:not(.user-is-tabbing) a:focus {
     line-height: 1.1;
   }
 }
+
+/* ----- Stop hero text overlapping the nav on mobile ----- */
+@media (max-width: 900px) {
+  .header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;      /* nav on top, hero text below */
+  }
+
+  .header__text-box {
+    flex: 1;                     /* take remaining height */
+    display: flex;
+    align-items: center;         /* vertically center within the remaining space */
+  }
+
+  .header__text {
+    position: static;            /* disable absolute centering */
+    top: auto;
+    transform: none;
+  }
+
+  /* Optional: slightly smaller title on phones */
+  .heading-primary {
+    font-size: clamp(2.6rem, 8vw, 5rem);
+    line-height: 1.1;
+  }
+}
